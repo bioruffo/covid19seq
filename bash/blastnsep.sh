@@ -17,5 +17,5 @@ $1 -db $2 -query $3 -out $1_$4_tab.out -num_alignments 99999 -outfmt 6 $6
 echo -e "qseqid\tsseqid\tpident\tlength\tmismatch\tgapopen\tqstart\tqend\tsstart\tsend\tevalue\tbitscore" | cat - $1_$4_tab.out > $1_$4_tab.tsv
 rm $1_$4_tab.out
 echo "Separating the sequencess of match length > $5..."
-python3 ../python/fromfasta.py -i ./$2.fa -o $1_$4_selected.fa -b ./$1_$4_tab.tsv "3 >= $5 1" $7
+python3 ../../python/fromfasta.py -i ./$2.fa -o $1_$4_selected.fa -b ./$1_$4_tab.tsv "3 >= $5 1" $7
 echo "blastnsep DONE!"
