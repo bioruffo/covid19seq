@@ -20,7 +20,7 @@ bash ../../bash/dodb.sh ../NCBI_seqs/NCBI_protein_30mar20_2645prots_sequences.fa
 
 
 # Find matches to spike protein
-# In Python, '--p True' purge (remove) sequences with indetermined aa's or N's
+# In the Python script, '--p True' will purge (remove) sequences with indetermined aa's or N's
 bash ../../bash/blastnsep.sh blastp ncbiprot $PROTSEQ $NAME $MIN_LENGTH '' '-p True'
 #232 sequences returned
 
@@ -45,7 +45,7 @@ bash ../../bash/dodb.sh ../Gisaid_seqs/gisaid_cov2020_sequences-30mar20_HiCovOnl
 
 # Find matches to spike protein
 # WE NEED TO USE '-seg no' TO AVOID LOSING THE FIRST 11 AMINOACIDS!
-# In Python, '-t True -p True' will translate sequences and purge (remove) sequences with indetermined aa's or N's
+# In the Python script, '-t True -p True' will translate sequences and purge (remove) sequences with indetermined aa's or N's
 bash ../../bash/blastnsep.sh tblastn gisnuc $PROTSEQ $NAME $MIN_LENGTH '-seg no' '-t True -p True'
 #1933 sequences returned
 
