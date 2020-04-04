@@ -2,7 +2,10 @@
 # Save it in NCBI_seqs as: 'spike_YP_009724390.1.fa'
 
 PROTSEQ="../../NCBI/NCBI_seqs/spike_YP_009724390.1.fa"
+# NAME will be used in fileand directory names
 NAME="spike"
+# MIN_LENGTH is used for the minimum alignment length filter.
+# The value of 1000 aa would be for the spike that's 1273 aa; must change it for other proteins.
 MIN_LENGTH=1000
 
 
