@@ -7,7 +7,7 @@ MIN_LENGTH=1000
 
 
 # Download protein sequences as multiFASTA from: https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/virus?SeqType_s=Protein&VirusLineage_ss=Severe%20acute%20respiratory%20syndrome%20coronavirus%202%20(SARS-CoV-2),%20taxid:2697049
-#Save them in the NCBI_seqs directory as: 'NCBI_protein_30mar20_2645prots_sequences.fasta'
+# i.e. save them in the NCBI_seqs directory as: 'NCBI_protein_30mar20_2645prots_sequences.fasta'
 
 # Create a BLAST database from protein sequences downloaded from NCBI on 30/03
 cd NCBI
@@ -32,7 +32,7 @@ cd ../..
 ## USING BLASTX TO SEARCH WITHIN GISAID HIGH-QUALITY NUCLEOTIDE SEQUENCES
 
 # Download protein sequences as multiFASTA from Gisaid
-#Save them in the Gisaid_seqs directory as: 'gisaid_cov2020_sequences-30mar20_HiCovOnly_2179.fasta'
+# i.e. save them in the Gisaid_seqs directory as: 'gisaid_cov2020_sequences-30mar20_HiCovOnly_2179.fasta'
 
 # Create a BLAST database from NUCLEOTIDE sequences downloaded from GISAID on 30/03
 cd Gisaid
