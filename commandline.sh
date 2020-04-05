@@ -32,7 +32,7 @@ clustalo -i blastp_$NAME'_selected.fa' -o blastp_$NAME'_selected.aln' --outfmt=c
 cd ../..
 
 
-## USING BLASTX TO SEARCH WITHIN GISAID HIGH-QUALITY NUCLEOTIDE SEQUENCES
+## USING TBLASTN TO SEARCH WITHIN GISAID HIGH-QUALITY NUCLEOTIDE SEQUENCES
 
 # Download protein sequences as multiFASTA from Gisaid
 # i.e. save them in the Gisaid_seqs directory as: 'gisaid_cov2020_sequences-30mar20_HiCovOnly_2179.fasta'
